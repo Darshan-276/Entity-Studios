@@ -1,0 +1,49 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <radialGradient id="void" cx="0" cy="0" r="1" gradientUnits="userSpaceOnUse" gradientTransform="translate(256 236) rotate(90) scale(282)">
+      <stop stop-color="#2B1A57"/>
+      <stop offset="0.58" stop-color="#151127"/>
+      <stop offset="1" stop-color="#080A12"/>
+    </radialGradient>
+    <linearGradient id="rune" x1="112" y1="94" x2="406" y2="420" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F4EDFF"/>
+      <stop offset="0.34" stop-color="#C7A9FF"/>
+      <stop offset="0.7" stop-color="#8959F3"/>
+      <stop offset="1" stop-color="#5B2BB5"/>
+    </linearGradient>
+    <linearGradient id="edge" x1="65" y1="73" x2="450" y2="439" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#E8DFFF" stop-opacity="0.86"/>
+      <stop offset="0.28" stop-color="#996DFF" stop-opacity="0.56"/>
+      <stop offset="0.72" stop-color="#6D37D5" stop-opacity="0.3"/>
+      <stop offset="1" stop-color="#CDBAFF" stop-opacity="0.68"/>
+    </linearGradient>
+    <filter id="glow" x="34" y="34" width="444" height="444" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feGaussianBlur stdDeviation="13" result="blur"/>
+      <feFlood flood-color="#9A69FF" flood-opacity="0.55"/>
+      <feComposite in2="blur" operator="in" result="glow"/>
+      <feMerge>
+        <feMergeNode in="glow"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+  <rect width="512" height="512" rx="128" fill="url(#void)"/>
+  <rect x="15" y="15" width="482" height="482" rx="113" stroke="url(#edge)" stroke-opacity="0.6" stroke-width="2"/>
+  <g opacity="0.32" stroke="#BFA5FF">
+    <circle cx="256" cy="256" r="173" stroke-width="1.5"/>
+    <circle cx="256" cy="256" r="148" stroke-width="0.75" stroke-dasharray="4 10"/>
+    <path d="M256 75V99M256 413V437M75 256H99M413 256H437" stroke-width="2"/>
+    <path d="M127 127L144 144M368 368L385 385M385 127L368 144M144 368L127 385" stroke-width="1.5"/>
+  </g>
+  <g filter="url(#glow)">
+    <path d="M256 102L390 180V334L256 412L122 334V180L256 102Z" stroke="url(#rune)" stroke-width="8"/>
+    <path d="M256 145L337 193V286L256 333L175 286V193L256 145Z" fill="#110D22" stroke="#C9B0FF" stroke-opacity="0.58" stroke-width="3"/>
+    <path d="M256 167L306 277H281L266 241H243L228 277H204L256 167ZM254 215L248 228H261L254 215Z" fill="url(#rune)"/>
+    <path d="M313 202V289H287V202H313ZM300 284L344 327L327 344L283 301L300 284Z" fill="url(#rune)"/>
+    <path d="M313 210C338 213 353 229 353 252C353 267 346 280 333 287L322 268C329 264 333 258 333 250C333 239 326 231 313 229V210Z" fill="url(#rune)"/>
+    <circle cx="256" cy="126" r="6" fill="#F5EFFF"/>
+    <circle cx="386" cy="256" r="5" fill="#E1D3FF"/>
+    <circle cx="256" cy="386" r="4" fill="#D5C2FF"/>
+    <circle cx="126" cy="256" r="5" fill="#E1D3FF"/>
+  </g>
+</svg>

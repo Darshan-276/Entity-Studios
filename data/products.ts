@@ -1,0 +1,75 @@
+import type { Product } from "../lib/models";
+
+/**
+ * Product records intentionally reference their owner by `botId`, making the
+ * marketplace and per-bot storefront two views of the same catalog.
+ */
+export const products: readonly Product[] = [
+  {
+    id: "anime-realms-premium-membership",
+    slug: "anime-realms-premium-membership",
+    name: "Premium Membership",
+    description: "Unlock an elevated Anime Realms experience with monthly member rewards.",
+    longDescription:
+      "Premium Membership adds a curated rewards track, exclusive cosmetics, and quality-of-life upgrades for players who want to get more from every season.",
+    price: 4.99,
+    currency: "USD",
+    botId: "anime-realms",
+    category: "membership",
+    image: "/assets/bots/anime-realms/hero.png",
+    featured: true,
+    status: "active",
+    deliveryType: "subscription",
+    features: [
+      "Monthly premium reward track",
+      "Exclusive title and profile cosmetics",
+      "Expanded collection tools",
+      "Support for future seasonal content",
+    ],
+    metadata: { interval: "month" },
+  },
+  {
+    id: "anime-realms-xp-boost",
+    slug: "anime-realms-xp-boost",
+    name: "Realm XP Boost",
+    description: "Accelerate your next chapter with a focused progression boost.",
+    price: 2.49,
+    currency: "USD",
+    botId: "anime-realms",
+    category: "boost",
+    image: "/assets/bots/anime-realms/hero.png",
+    status: "active",
+    deliveryType: "entitlement",
+    features: ["Instant account delivery", "Applies to your active progression", "One-time purchase"],
+  },
+  {
+    id: "anime-realms-profile-card",
+    slug: "anime-realms-profile-card",
+    name: "Astral Profile Card",
+    description: "Give your profile an unmistakable cosmic identity.",
+    price: 3.99,
+    currency: "USD",
+    botId: "anime-realms",
+    category: "cosmetic",
+    image: "/assets/bots/anime-realms/hero.png",
+    featured: true,
+    status: "active",
+    deliveryType: "entitlement",
+    features: ["Animated-inspired profile treatment", "Permanent cosmetic unlock", "Visible across your profile"],
+  },
+  {
+    id: "anime-realms-founders-cache",
+    slug: "anime-realms-founders-cache",
+    name: "Founder's Cache",
+    description: "A collector's bundle for the start of a new legend.",
+    price: 9.99,
+    currency: "USD",
+    botId: "anime-realms",
+    category: "bundle",
+    image: "/assets/bots/anime-realms/hero.png",
+    featured: true,
+    status: "active",
+    deliveryType: "entitlement",
+    features: ["Premium currency bundle", "Limited founder title", "Exclusive profile cosmetic", "Bonus quest reward"],
+  },
+];
