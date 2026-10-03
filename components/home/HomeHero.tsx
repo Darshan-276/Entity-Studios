@@ -1,21 +1,23 @@
 "use client";
 
 import Link from "next/link";
-import { motion, useReducedMotion } from "framer-motion";
+import { motion, useReducedMotion, type Easing, type Transition } from "framer-motion";
 import { ArrowRight, MessageCircle, MoveDown } from "lucide-react";
 
 const discordUrl = process.env.NEXT_PUBLIC_DISCORD_INVITE_URL ?? "https://discord.gg/entitystudios";
+const cinematicEase: Easing = [0.22, 1, 0.36, 1];
 
 const word = (text: string, delay: number) => ({
   initial: { opacity: 0, y: 34, filter: "blur(8px)" },
   animate: { opacity: 1, y: 0, filter: "blur(0px)" },
-  transition: { duration: 0.8, delay, ease: [0.22, 1, 0.36, 1] },
+  transition: { duration: 0.8, delay, ease: cinematicEase } satisfies Transition,
   children: text,
 });
 
 export function HomeHero() {
   const reducedMotion = useReducedMotion();
-  const transition = (delay: number) => reducedMotion ? { duration: 0 } : { duration: 0.8, delay, ease: [0.22, 1, 0.36, 1] as const };
+  const transition = (delay: number): Transition =>
+    reducedMotion ? { duration: 0 } : { duration: 0.8, delay, ease: cinematicEase };
   return (
     <section className="relative flex min-h-[min(810px,calc(100svh-72px))] items-center overflow-hidden pb-24 pt-16 sm:pt-20" aria-labelledby="hero-heading">
       <div className="grid-pattern" />
