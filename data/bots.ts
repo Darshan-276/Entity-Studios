@@ -13,10 +13,15 @@ export const bots: readonly Bot[] = [
       "Build your legend in a living anime RPG for Discord. Recruit iconic heroes, master your realm through quests and battles, collect rare rewards, and rise through a community-driven world that is always expanding.",
     shortDescription:
       "An anime RPG for Discord built around progression, battles, collecting, and community events.",
+    heroHeadline: "Your anime adventure",
+    heroAccent: "starts in Discord.",
+    heroDescription:
+      "Battle, collect, progress, and build your story with Anime Realms. A community RPG that gives every session another step toward your next chapter.",
     category: "Anime RPG",
+    discoveryCategory: "RPG",
     logo: "/assets/bots/anime-realms/logo.svg",
     banner: "/assets/bots/anime-realms/hero.png",
-    inviteUrl: "https://discord.com/oauth2/authorize",
+    inviteUrl: process.env.NEXT_PUBLIC_ANIME_REALMS_INVITE_URL ?? "",
     discordUrl: process.env.NEXT_PUBLIC_DISCORD_INVITE_URL,
     status: "online",
     serverCount: 12480,
@@ -46,6 +51,36 @@ export const bots: readonly Bot[] = [
           "Earn titles, profile cards, cosmetics, and achievements that make every collection feel personal.",
         icon: "users",
       },
+      {
+        title: "Take on daily quests",
+        description:
+          "Turn short visits into steady progress with objectives designed to give each session a clear next step.",
+        icon: "sparkles",
+      },
+      {
+        title: "Grow with your guild",
+        description:
+          "Work toward shared milestones, compare progress, and take part in seasonal community events.",
+        icon: "users",
+      },
+      {
+        title: "Manage your realm economy",
+        description:
+          "Earn and spend in-game currency through play, then decide which upgrades matter most to your build.",
+        icon: "shopping-bag",
+      },
+      {
+        title: "Track every achievement",
+        description:
+          "Mark important milestones and build a visible record of the challenges you have completed.",
+        icon: "trophy",
+      },
+      {
+        title: "Shape your strategy",
+        description:
+          "Pair character abilities and equipment to prepare for different encounters and reward paths.",
+        icon: "shield",
+      },
     ],
     commands: [
       {
@@ -69,6 +104,7 @@ export const bots: readonly Bot[] = [
         category: "Profile",
       },
     ],
+    commandStatus: "representative",
     premiumFeatures: [
       "Daily premium reward track",
       "Exclusive profile cosmetics and titles",
@@ -102,6 +138,45 @@ export const bots: readonly Bot[] = [
           "Join the Entity Studios Discord community for guides, announcements, and support from the team and players.",
       },
     ],
+    journey: [
+      { title: "Create your profile", description: "Set up a player profile and get a first look at the realms, your roster, and the next available objective." },
+      { title: "Choose a path", description: "Follow quests, collect rewards, and decide how to build up your characters and inventory." },
+      { title: "Take on encounters", description: "Prepare a roster, use its abilities, and work through battles at a pace that suits your server." },
+      { title: "Progress together", description: "Bring your community into events, shared goals, and the next chapter of your adventure." },
+    ],
+    showcase: {
+      characterName: "Astra, Dawnkeeper",
+      characterClass: "Astral Vanguard",
+      characterRarity: "Legendary",
+      level: 28,
+      experience: 6840,
+      nextLevelExperience: 9000,
+      stats: [
+        { label: "Power", value: "1,248" },
+        { label: "Vitality", value: "936" },
+        { label: "Focus", value: "82" },
+      ],
+      abilities: ["Starfall", "Aegis Bloom", "Dawn Pulse"],
+      inventory: [
+        { name: "Moonlit Sigil", detail: "Relic · Rare" },
+        { name: "Phoenix Thread", detail: "Material · Epic" },
+        { name: "Starlight Shard", detail: "Currency · 240" },
+      ],
+      reward: "A new chapter and 320 realm XP",
+    },
+    collection: {
+      eyebrow: "Characters & collectibles",
+      headline: "Find a favorite. Make it yours.",
+      description:
+        "Build out a collection, chase rare finds, and shape a profile that tells your story. Cosmetic details and achievements make progress feel personal.",
+      artworkCaption: "A roster that feels like yours.",
+      items: [
+        { title: "Character collection", description: "A growing roster to discover and develop." },
+        { title: "Rare collectibles", description: "Items, variants, and rewards with their own place in your inventory." },
+        { title: "Achievements", description: "Keep track of the moments and milestones you earn." },
+        { title: "Profile style", description: "Titles and visual details that make your profile recognizable." },
+      ],
+    },
     theme: {
       primaryColor: "#9B5CFF",
       secondaryColor: "#5E4AE3",

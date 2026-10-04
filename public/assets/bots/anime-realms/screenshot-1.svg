@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 675" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="120" y1="32" x2="1092" y2="651" gradientUnits="userSpaceOnUse"><stop stop-color="#25203A"/><stop offset=".52" stop-color="#12111B"/><stop offset="1" stop-color="#0A0A10"/></linearGradient>
+    <linearGradient id="art" x1="570" y1="90" x2="945" y2="570" gradientUnits="userSpaceOnUse"><stop stop-color="#C5A5FF" stop-opacity=".9"/><stop offset=".5" stop-color="#7055C9" stop-opacity=".56"/><stop offset="1" stop-color="#171323" stop-opacity=".14"/></linearGradient>
+    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="1"><stop stop-color="#EADFFF"/><stop offset="1" stop-color="#9A6AFF"/></linearGradient>
+    <filter id="blur"><feGaussianBlur stdDeviation="38"/></filter>
+  </defs>
+  <rect width="1200" height="675" rx="28" fill="url(#bg)"/>
+  <circle cx="880" cy="220" r="210" fill="#8967D8" fill-opacity=".25" filter="url(#blur)"/>
+  <path d="M620 514c50-138 100-218 172-264 31-20 58-18 84 10 24 25 44 69 86 254H620Z" fill="url(#art)" opacity=".75"/>
+  <path d="M797 114c36-49 118-59 163-17 42 39 32 112-2 150-18 21-48 34-78 33-52-3-98-42-104-95-3-27 6-52 21-71Z" fill="#B9A4F0" fill-opacity=".38"/>
+  <path d="m860 135 15-25 16 25 27 6-19 20 3 28-27-12-25 12 3-28-19-20 26-6Z" fill="#E3D5FF" fill-opacity=".7"/>
+  <rect x="28" y="28" width="1144" height="619" rx="22" stroke="white" stroke-opacity=".14"/>
+  <rect x="28" y="28" width="1144" height="54" rx="22" fill="#08080D" fill-opacity=".62"/>
+  <path d="M28 62a34 34 0 0 1 34-34h1076a34 34 0 0 1 34 34v20H28V62Z" fill="#09090E" fill-opacity=".35"/>
+  <circle cx="55" cy="55" r="6" fill="#F87171"/><circle cx="76" cy="55" r="6" fill="#FBBF24"/><circle cx="97" cy="55" r="6" fill="#4ADE80"/>
+  <text x="136" y="60" fill="#CFC9D9" font-family="Arial,sans-serif" font-size="13" font-weight="600">ANIME REALMS  /  CHARACTER ARCHIVE</text>
+  <text x="77" y="151" fill="#B59AFF" font-family="Arial,sans-serif" font-size="11" font-weight="700" letter-spacing="2.5">PLAYER PROFILE</text>
+  <text x="77" y="198" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="34" font-weight="700">Astra, Dawnkeeper</text>
+  <text x="77" y="226" fill="#C3B8D2" font-family="Arial,sans-serif" font-size="14">Astral Vanguard  ·  Legendary</text>
+  <rect x="77" y="255" width="92" height="31" rx="15.5" fill="#9A6AFF" fill-opacity=".2" stroke="#C3A5FF" stroke-opacity=".36"/>
+  <text x="99" y="275" fill="#E1D5FF" font-family="Arial,sans-serif" font-size="11" font-weight="700">LEVEL 28</text>
+  <text x="77" y="331" fill="#9D95AC" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1.5">EXPERIENCE</text>
+  <text x="424" y="331" fill="#D9D3E4" font-family="Arial,sans-serif" font-size="10" text-anchor="end">6,840 / 9,000 XP</text>
+  <rect x="77" y="344" width="347" height="8" rx="4" fill="#FFFFFF" fill-opacity=".12"/>
+  <rect x="77" y="344" width="264" height="8" rx="4" fill="url(#accent)"/>
+  <rect x="77" y="380" width="105" height="65" rx="12" fill="#FFFFFF" fill-opacity=".045" stroke="#FFFFFF" stroke-opacity=".1"/>
+  <rect x="193" y="380" width="105" height="65" rx="12" fill="#FFFFFF" fill-opacity=".045" stroke="#FFFFFF" stroke-opacity=".1"/>
+  <rect x="309" y="380" width="115" height="65" rx="12" fill="#FFFFFF" fill-opacity=".045" stroke="#FFFFFF" stroke-opacity=".1"/>
+  <text x="92" y="403" fill="#8E879B" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1">POWER</text><text x="92" y="430" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="18" font-weight="700">1,248</text>
+  <text x="208" y="403" fill="#8E879B" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1">VITALITY</text><text x="208" y="430" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="18" font-weight="700">936</text>
+  <text x="324" y="403" fill="#8E879B" font-family="Arial,sans-serif" font-size="9" font-weight="700" letter-spacing="1">FOCUS</text><text x="324" y="430" fill="#FFFFFF" font-family="Arial,sans-serif" font-size="18" font-weight="700">82</text>
+  <text x="77" y="492" fill="#9D95AC" font-family="Arial,sans-serif" font-size="10" font-weight="700" letter-spacing="1.5">KNOWN ABILITIES</text>
+  <rect x="77" y="508" width="104" height="31" rx="15.5" fill="#FFFFFF" fill-opacity=".055"/><text x="93" y="528" fill="#D9D3E4" font-family="Arial,sans-serif" font-size="10">✦ Starfall</text>
+  <rect x="190" y="508" width="126" height="31" rx="15.5" fill="#FFFFFF" fill-opacity=".055"/><text x="206" y="528" fill="#D9D3E4" font-family="Arial,sans-serif" font-size="10">✦ Aegis Bloom</text>
+  <rect x="325" y="508" width="99" height="31" rx="15.5" fill="#FFFFFF" fill-opacity=".055"/><text x="341" y="528" fill="#D9D3E4" font-family="Arial,sans-serif" font-size="10">✦ Dawn Pulse</text>
+  <text x="77" y="599" fill="#817B8E" font-family="Arial,sans-serif" font-size="10">REPRESENTATIVE INTERFACE CONCEPT</text>
+  <path d="M970 528c42-29 73-81 107-196 12 60 23 114 39 196" stroke="#D9C7FF" stroke-opacity=".3" stroke-width="2"/>
+</svg>

@@ -5,6 +5,7 @@ export type ProductCategory =
   | "boost"
   | "currency"
   | "cosmetic"
+  | "profile"
   | "bundle"
   | "upgrade"
   | "license"

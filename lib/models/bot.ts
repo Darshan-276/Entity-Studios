@@ -26,6 +26,7 @@ export interface BotTheme {
 }
 
 export type BotStatus = "online" | "maintenance" | "beta" | "coming-soon";
+export type BotDiscoveryCategory = "RPG" | "Gaming" | "Utility" | "Community" | "Entertainment" | (string & {});
 
 export type BotIconName =
   | "swords"
@@ -59,13 +60,43 @@ export interface BotFaq {
   answer: string;
 }
 
+export interface BotJourneyStep {
+  title: string;
+  description: string;
+}
+
+export interface BotShowcase {
+  characterName: string;
+  characterClass: string;
+  characterRarity: string;
+  level: number;
+  experience: number;
+  nextLevelExperience: number;
+  stats: readonly { label: string; value: string }[];
+  abilities: readonly string[];
+  inventory: readonly { name: string; detail: string }[];
+  reward: string;
+}
+
+export interface BotCollection {
+  eyebrow: string;
+  headline: string;
+  description: string;
+  artworkCaption: string;
+  items: readonly { title: string; description: string }[];
+}
+
 export interface Bot {
   id: string;
   slug: string;
   name: string;
   description: string;
   shortDescription: string;
+  heroHeadline?: string;
+  heroAccent?: string;
+  heroDescription?: string;
   category: string;
+  discoveryCategory?: BotDiscoveryCategory;
   logo: string;
   banner?: string;
   inviteUrl: string;
@@ -76,9 +107,13 @@ export interface Bot {
   featureHighlights: readonly string[];
   features: readonly BotFeature[];
   commands?: readonly BotCommand[];
+  commandStatus?: "verified" | "representative";
   premiumFeatures?: readonly string[];
   screenshots?: readonly string[];
   stats?: readonly BotStat[];
   faq?: readonly BotFaq[];
+  journey?: readonly BotJourneyStep[];
+  showcase?: BotShowcase;
+  collection?: BotCollection;
   theme: BotTheme;
 }

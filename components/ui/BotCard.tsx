@@ -29,7 +29,11 @@ export function BotCard({ bot, featured = false }: BotCardProps) {
         </ul>
         <div className="mt-6 flex items-center gap-3">
           <Link href={`/bots/${bot.slug}`} className="inline-flex items-center gap-1.5 text-sm font-semibold text-white transition-colors hover:text-[#c9adff] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-entity">View bot <ArrowUpRight className="h-4 w-4" /></Link>
-          <a href={bot.inviteUrl} target="_blank" rel="noreferrer" className="ml-auto rounded-full border border-white/15 px-3.5 py-2 text-xs font-semibold text-white transition-colors hover:border-[#c9adff]/60 hover:bg-white/[.06] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-entity">Invite</a>
+          {bot.inviteUrl ? (
+            <a href={bot.inviteUrl} target="_blank" rel="noreferrer" className="ml-auto rounded-full border border-white/15 px-3.5 py-2 text-xs font-semibold text-white transition-colors hover:border-[#c9adff]/60 hover:bg-white/[.06] focus-visible:outline-none focus-visible:ring-2 focus-visible:ring-entity">Invite</a>
+          ) : (
+            <button type="button" disabled title="The bot invite link will be added when the Discord application is ready" className="ml-auto cursor-not-allowed rounded-full border border-white/10 px-3.5 py-2 text-xs font-semibold text-mist/60">Invite soon</button>
+          )}
         </div>
       </div>
     </article>
